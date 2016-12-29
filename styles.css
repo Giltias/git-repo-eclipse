@@ -21,9 +21,21 @@ body {
 
 .header {
     /* Style for "Rectangle" */
-    height: 915px;
-    background: rgba(161, 0, 255,0.5) url(images/boots.png);
+    height: 912px;
+    background: url(images/boots.png),rgba(161, 0, 255,0.5);
     background-blend-mode: hard-light;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: -57px;
+    left:50%;
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0);
 }
 
 .header-nav {
@@ -107,7 +119,6 @@ body {
 }
 .header-article-caption {
     width: 512px;
-    height: 154px;
     color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 60px;
@@ -118,7 +129,7 @@ body {
 
 .header-article-data {
     /* Style for "Lorem ipsu" */
-    width: 520px;
+    width: 513px;
     height: 48px;
     color: #ffffff;
     font-family: Gotham, sans-serif;
@@ -127,7 +138,7 @@ body {
     line-height: 24px;
     overflow: hidden;
     padding-left: 3px;
-    padding-top: 40px;
+    padding-top: 29px;
 }
 
 .header-subscribe-form {
@@ -140,7 +151,6 @@ body {
     height: 60px;
     border: none;
     border-radius: 3px;
-    background: linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     color: rgba(51, 51, 51, 0.9);
     font-family: Montserrat, sans-serif;
@@ -156,9 +166,13 @@ body {
 
 .header-subscribe-form .i-select {
     width: 232px;
+    background: url(images/arrow-down.svg) no-repeat 239px 52%,
+                linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
 }
 .header-subscribe-form .i-text {
     width:218px;
+    background: url(images/simple-arrow-right.svg) no-repeat 234px 51%,
+    linear-gradient(to top, #eeeeee 0%, #ffffff 100%);
 }
 
 .header-subscribe-form input[type="submit"] {
