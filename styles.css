@@ -25,6 +25,7 @@ body {
     background: url(images/boots.png),rgba(161, 0, 255,0.5);
     background-blend-mode: hard-light;
     position: relative;
+    z-index: -10;
 }
 
 .header-nav {
@@ -180,7 +181,7 @@ body {
 .latest-style {
     position: relative;
     width: inherit;
-    height: 592px;
+    height: 542px;
     background: url(images/ldesign.png) 0 10px;
     background-blend-mode: overlay;
 }
@@ -193,7 +194,8 @@ body {
     width: 114px;
     height: 57px;
     border-radius: 114px 114px 0 0;
-    background: url(images/ldesign.png) 6px 10px;
+    background: url(images/ldesign.png) 7px 10px;
+    z-index: -1;
 }
 
 .icon {
@@ -203,7 +205,65 @@ body {
     fill: currentColor;
 }
 .icon-arrow-scroll-down {
-    font-size:33px;
-    color: #96a5b4;
+    position: absolute;
+    top: -10px;
+    left: 782px;
+    font-size:34px;
     margin: 0 auto;
+}
+
+.icon-color1 {
+    color: #96a5b4;
+}
+
+.latest-style-caption {
+    color: #333b42;
+    font-family: Gotham, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 111px;
+}
+
+.latest-style-text {
+    width: 665px;
+    height: 50px;
+    margin: 26px auto;
+    color: #74797e;
+    font-family: Gotham, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.latest-style-image {
+    position: absolute;
+    bottom: 0;
+    left:calc(50% - 213px);
+    width: 423px;
+    height: 240px;
+    background: url("images/iphone-6.png") no-repeat;
+}
+
+.latest-style::after {
+    content: '';
+    position: absolute;
+    bottom: -53px;
+    left:   calc(50% - 58px);
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    background-color: #28c8c6;
+}
+
+.features {
+    position: relative;
+    height: 777px;
+}
+
+.icon-color2 {
+    color: #fff;
 }
