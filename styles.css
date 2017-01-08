@@ -8,6 +8,12 @@
     font-weight: bold;
 }
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 * {
     padding:0;
     margin:0;
@@ -210,6 +216,7 @@ body {
     left: 782px;
     font-size:34px;
     margin: 0 auto;
+    z-index: 99;
 }
 
 .icon-color1 {
@@ -262,8 +269,222 @@ body {
 .features {
     position: relative;
     height: 777px;
+    border-bottom: 1px solid #d8e0e8;
+}
+
+.features::after {
+    content: '';
+    position: absolute;
+    bottom: -55px;
+    left:   calc(50% - 58px);
+    width: 112px;
+    height: 53px;
+    border-radius: 0 0 110px 110px;
+    background-color: #fff;
+    border: 1px solid #d8e0e8;
+    border-top: 1px solid #fff;
+    z-index: 1;
+}
+
+.features-caption {
+    padding-top: 155px;
+    text-align: center;
+}
+
+.features-caption-h3 {
+    color: #333b42;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features-caption-p {
+    width: 670px;
+    height: 50px;
+    margin: 18px auto;
+    color: #74797e;
+    font-family: Gotham, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.features-container {
+    width: 1177px;
+    margin: 57px auto;
+}
+
+.features-item {
+    float: left;
+    width: 277px;
+    margin-right: 23px;
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.features-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 137px;
+    height: 137px;
+    background-color: #8500d2;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.features-item-icon1 {
+    font-size: 50px;
+}
+.features-item-icon2 {
+    font-size: 38px;
+}
+.features-item-icon3 {
+    font-size: 42px;
+}
+.features-item-icon4 {
+    font-size: 55px;
+}
+
+.features-item-caption {
+    margin-top: 30px;
+    text-align: center;
+    color: #333b42;
+    font-family: Gotham, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.features-item-article {
+    margin-top: 20px;
+    text-align: center;
+    color: #74797e;
+    font-family: Gotham, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+
 }
 
 .icon-color2 {
     color: #fff;
 }
+
+.icon-color3 {
+    color: #d8e0e8;
+}
+
+.design-guidlines {
+    position: relative;
+    height: 756px;
+    background-color: #f6f9fa;
+}
+
+.design-guidlines .icon-arrow-scroll-down {
+    top: -19px;
+}
+
+.guid-text {
+    padding-top:131px;
+    text-align: center;
+}
+
+.guid-text-caption {
+    color: #333b42;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.guid-text-article {
+    width: 905px;
+    height: 50px;
+    margin: 15px auto;
+    color: #74797e;
+    font-family: Gotham, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.guid-menu {
+    width: 568px;
+    height: 56px;
+    margin: 40px 506px 54px 524px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #28c8c6;
+}
+
+.guid-menu-item {
+    color: #28c8c6;
+    font-family: Gotham, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    flex-grow:1;
+    text-align: center;
+    line-height: 58px;
+    transition-duration: 0.5s;
+}
+
+.guid-menu-item:hover {
+    background-color: #28c8c6;
+    color: #fff;
+}
+
+.guid-listing {
+    width: 1181px;
+    height: 276px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.guid-listing-item {
+    width: 382px;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.guid-listing-item:last-child {
+    margin-right: 0;
+}
+
+.guid-listing-img {
+    width: 380px;
+    height: 204px;
+    background-image: url(images/lising-image.png);
+    z-index: 1;
+}
+
+.guid-listing-caption {
+    position: absolute;
+    width:inherit;
+    height: 118px;
+    border-radius: 10px;
+    align-self:flex-end;
+    background: #fff url("images/shape-right.png") no-repeat 326px 76px;
+}
+.guid-listing-caption h4 {
+    padding-top:74px;
+    padding-left: 102px;
+    color: #333b42;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.push {
+    height: 890px;
+    background-image: url("images/push.png");
+}
+
