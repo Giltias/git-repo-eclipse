@@ -488,3 +488,130 @@ body {
     background-image: url("images/push.png");
 }
 
+.push-content {
+    width: 750px;
+    height: 240px;
+    padding: 332px 0 0 208px;
+
+}
+
+.push-logo {
+    float: left;
+}
+
+.icon-push-logo {
+    font-size: 177px;
+}
+
+.icon-color4 {
+    color: #28c8c6;
+}
+
+.push-article {
+    float: left;
+    width: 520px;
+    height: 154px;
+    margin-left: 40px;
+}
+
+.push-article-caption {
+    position: relative;
+    top: -4px;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 55px;
+    text-transform: uppercase;
+}
+
+.push-article-p {
+    margin-top: 25px;
+    margin-left: 3px;
+    height: 48px;
+    color: #ffffff;
+    font-family: Gotham, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footer {
+    position: relative;
+    color: #8297a7;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.footer-img {
+    position: absolute;
+    left: 439px;
+    top: -521px;
+    width:1010px;
+    height: 1246px;
+    background: url("images/notebook.png") no-repeat;
+}
+
+.footer-content {
+    width: 1182px;
+    height: 256px;
+    padding-top: 697px;
+    padding-left: 206px;
+}
+
+.footer-buttons {
+    display: flex;
+    height: 34px;
+    justify-content: flex-end;
+}
+
+.footer-btn {
+    width: 54px;
+    margin-left: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 35px;
+    text-decoration: none;
+    padding-left: 41px;
+}
+
+.footer-tw {
+    background: #69b6f2 url("images/tweet.png") no-repeat 17px 50%;
+}
+
+.footer-fb {
+    background: #3a579a url("images/fb.png") no-repeat 15px 50%;
+}
+
+.footer-nav {
+    float: left;
+    width: 70px;
+    margin-top: 38px;
+    margin-right: 70px;
+    list-style: none;
+}
+
+.footer-copyright {
+    float: right;
+    width: 310px;
+    margin-top: 40px;
+    list-style: none;
+    text-align: right;
+}
+
+.item-copyright {
+    line-height: 32px;
+}
+
+.footer-text {
+    margin-top: 19px;
+    margin-left: 3px;
+}
+
